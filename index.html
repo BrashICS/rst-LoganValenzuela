@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Minesweeper Clone - Game</title>
+  <link rel="icon" type="image/x-icon" href="images/temp/flag.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="scripts/sweeper.js" defer></script>
+</head>
+
+<body>
+    <h1 class="header">
+        Minesweeper Clone
+        <img class="icon" src="images/temp/flag.png" alt="Icon">
+    </h1>
+
+    <h2 class="subtitle">Pages:</h2>
+    <a href="./pages/howtoplay.html" class="subsubtitle">How to Play</a><br><hr>
+    <a href="./pages/information.html" class="subsubtitle">Information</a>
+
+    <h2 class="subtitle">Choose a Size:</h2>
+    <div>
+        <ul>
+            <li><button id="beginner" class="text">Beginner (9x9)</button></li>
+            <li><button id="intermediate" class="text">Intermediate (16x16)</button></li>
+            <li><button id="expert" class="text">Expert (30x16)</button></li><hr>
+            <li>
+                <button id="custom" class="text">Custom</button>
+                <div id="options" hidden>
+                    <label for="x" class="label">X Tiles:</label>
+                    <input id="x" class="text"> <br>
+                    <label for="y" class="label">Y Tiles:</label> 
+                    <input id="y" class="text"> <br>
+                    <label for="mines" class="label">Mines:</label> 
+                    <input id="mines" class="text"> <br>
+                    <button id="generate" class="text">Generate</button>
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+
+    <h2 class="subtitle">Preferences:</h2>
+    <div>
+        <label for="theme" class="label">Theme: </label>
+        <select name="theme" id="theme">
+            <option value="temp">Classic</option>
+        </select>
+
+        <br><br><button id="apply" class="text">Apply</button>
+        <pre id="warning" class="label" hidden><b>Warning:</b> This will reset your current game.</pre>
+    </div>
+
+    <br><hr>
+
+    <h2 class="title">Game</h2>
+    <div id="puzzle" class="puzzle">
+        <div class="puzzleheader">
+            <div>
+                <div class="puzzleflags" id="puzzleflags">
+                    <div id="flags000" class="flagcounternum"></div>
+                    <div id="flags00" class="flagcounternum"></div>
+                    <div id="flags0" class="flagcounternum"></div>
+                </div>
+            </div>
+            <div>
+                <div class="puzzletime" id="puzzletime">
+                    <div id="timer0" class="timecounternum"></div>
+                    <div id="timer00" class="timecounternum"></div>
+                    <div id="timer000" class="timecounternum"></div>
+                </div>
+            </div>
+            <img id="sun" class="puzzlesun" src="./images/temp/face_unpressed.png" alt="Sun" >
+        </div>
+        <div id="tiles"></div>
+        <img id="tiledummy" class="tile" src="./images/temp/closed.png" alt="Tile" hidden>
+    </div>
+
+    <div id="results" class="results" hidden>
+        <h2 id="resultstitle" class="subtitle">Game Over!</h2>
+        <a id="resultsmsg" class="text">So sad.</a><br><hr>
+
+        <h3 class="subsubtitle">Your Statistics</h3>
+        <ul>
+            <li id="clicks" class="label">Clicks: 0</li>
+            <li id="chords" class="label">Chords: 0</li>
+            <li id="flagsplaced" class="label">Flags Placed: 0</li>
+            <li id="rawtime" class="label">Raw Time: 0</li>
+            <li id="progress" class="label">Tiles Remaining: 0</li>
+        </ul>
+
+        <h2 class="label"><i>Hit the sun button to restart.</i></h2>
+    </div>
+
+    <span style="height:200px; display:block;"></span>
+
+    <footer>
+        Minesweeper Clone - &copy; 2024 Passionyte
+    </footer>
+</body>
+
+</html>
