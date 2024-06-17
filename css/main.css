@@ -1,0 +1,148 @@
+body {
+    background-color: whitesmoke;
+}
+
+.text {
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header {
+    background-color: lightgray;
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.title {
+    background-color: lightgray;
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    text-align: left;
+    font-weight: bolder;
+    margin: auto;
+}
+
+.subtitle {
+    background-color: lightgray;
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-align: left;
+}
+
+.subsubtitle {
+    background-color: lightgray;
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    text-align: left;
+}
+
+.subheader {
+    background-color: lightgray;
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    text-align: left;
+}
+
+.puzzle {
+    background-color: lightgray;
+    width: 200px;
+    height: 200px;
+}
+
+.puzzleheader {
+    background-color: gray;
+    width: 100%;
+    height: 40px;
+}
+
+.tile {
+    background-color: gray;
+    width: 24px;
+    height: 24px;
+    line-height: 23px;
+    float: left;
+    text-align: center;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.results {
+    padding-top: 40px;
+}
+
+.puzzlesun {
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    display: block;
+    left: 50%;
+}
+
+.puzzleflags {
+    width: 50px;
+    height: 30px;
+    float: left;
+    background-image: url("../images/temp/nums_background.png");
+    background-size: 100% 100%;
+}
+
+.puzzletime {
+    width: 50px;
+    height: 30px;
+    float: right;
+    background-image: url("../images/temp/nums_background.png");
+    background-size: 100% 100%;
+}
+
+.label {
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    float: left;
+    padding-left: 8px;
+    padding-right: 12px;
+}
+
+footer {
+    width: 100%;
+    font-family:'Courier New', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: lightgray;
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.flagcounternum {
+    height: 27px;
+    width: 15px;
+    background-image: url("../images/temp/d0.png");
+    background-size: 100% 100%;
+    float: left;
+    padding-right: 1px;
+    background-origin: content-box;
+}
+
+.timecounternum {
+    height: 27px;
+    width: 15px;
+    background-image: url("../images/temp/d0.png");
+    background-size: 100% 100%;
+    float: right;
+    padding-right: 1px;
+    background-origin: content-box;
+}
